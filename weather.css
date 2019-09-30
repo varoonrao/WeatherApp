@@ -56,6 +56,7 @@
 .text_overlay {
     position: absolute;
     top: 0px;
+    background-color: aliceblue;
     /* color: var(--main-text_color_blue); */
     color: black;
     font-weight: bold;
