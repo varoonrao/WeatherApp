@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="container1">
+            <div class="left">
+                <div class="day">
+                </div>
+                <div class="icon">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="maintemp">
+                    <span style="display: inline-block">
+                        <div class="temperature" style="display: inline-block">
+                            <p>- &#176 |<span></span></p>
+                        </div>
+                        <div class="temperature1" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image_div">
+                        <img id="weather_image_full" class="image_main" src="imgs/morning.jpg">
+                        <p class="text_overlay">-</p>
+                        <h4 class="text_overlay_place">-</h4>
+                </div>
+                
+            </div>
+            <div class="ham">
+                <div id="menu-bar">
+                    <div id="menu" onclick="onClickMenu()">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </div>
+                    <ul class="nav" id="nav">
+                        <li><a href="#" onclick="cityClick(51.5074,0.1278,4)">London</a></li>
+                        <li><a href="#" onclick="cityClick(41.8781,87.6298,10.50)">Chicago</a></li>
+                        <li><a href="#" onclick="cityClick(40.7128,74.0060,9.50)">New York</a></li>
+                        <li><a href="#" onclick="cityClick(24.4539,54.3773,1.50)">Abu Dhabi</a></li>
+                        <li><a href="#" onclick="cityClick(52.3667,4.8945,3.5)">Amsterdam</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wk1">
+                <div class="day1">
+                    <p>-</p>
+                </div>
+                <div class="icon1">
+                    <img src="icon/unknown.png" alt="" class="ic1">
+                </div>
+                <div class="maintemp1">
+                    <span style="display: inline-block">
+                        <div class="temperature10" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature11" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+
+                </div>
+            </div>
+            <div class="wk2">
+                <div class="day2">
+                    <p>-</p>
+                </div>
+                <div class="icon2">
+                    <img src="icons/unknown.png" alt="" class="ic2">
+                </div>
+                <div class="maintemp2">
+                    <span style="display: inline-block">
+                        <div class="temperature2" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature12" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="wk3">
+                <div class="day3">
+                    <p>-</p>
+                </div>
+                <div class="icon3">
+                    <img src="icons/unknown.png" alt="" class="ic3">
+                </div>
+                <div class="maintemp3">
+                    <span style="display: inline-block">
+                        <div class="temperature3" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature13" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="wk4">
+                <div class="day4">
+                    <p>-</p>
+                </div>
+                <div class="icon4">
+                    <img src="icons/unknown.png" alt="" class="ic4">
+                </div>
+                <div class="maintemp4">
+                    <span style="display: inline-block">
+                        <div class="temperature4" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature14" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="wk5">
+                <div class="day5">
+                    <p>-</p>
+                </div>
+                <div class="icon5">
+                    <img src="icons/unknown.png" alt="" class="ic5">
+                </div>
+                <div class="maintemp5">
+                    <span style="display: inline-block">
+                        <div class="temperature5" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature15" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="wk6">
+                <div class="day6">
+                    <p>-</p>
+                </div>
+                <div class="icon6">
+                    <img src="icons/unknown.png" alt="" class="ic6">
+                </div>
+                <div class="maintemp6">
+                    <span style="display: inline-block">
+                        <div class="temperature6" style="display: inline-block">
+                            <p>- &#176<span></span>/</p>
+                        </div>
+                        <div class="temperature16" style="display: inline-block">
+                            <p>- &#176 <span></span></p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
