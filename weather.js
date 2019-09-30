@@ -139,8 +139,8 @@ function cityClick(latitude, longitude, time) {
 
 function displayWeather() {
     iconElememnt.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElememnt.innerHTML = `${weather.temperature.value}&#176 |`;
-    tempminElement.innerHTML = `${weather.temperature1.value}&#176`;
+    tempElememnt.innerHTML = `${weather.temperature.value}&#176 C |`;
+    tempminElement.innerHTML = `${weather.temperature1.value}&#176 C`;  
     cityElement.innerHTML = weather.city;
 }
 
