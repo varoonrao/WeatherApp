@@ -44,7 +44,7 @@
 .image_main {
     height: 100%;
     width: 100%;
-
+    object-fit: cover;
 }
 
 .image_div {
@@ -55,17 +55,19 @@
 
 .text_overlay {
     position: absolute;
-    top: 0px;
+    top: 20px;
     background-color: aliceblue;
     /* color: var(--main-text_color_blue); */
     color: black;
     font-weight: bold;
     font-size: var(--main-text-size_medium);
-    left: 0px;
+    left: 20px;
 }
 
 .text_overlay_place {
     position: absolute;
+    background-color: aliceblue;
+
     /* color: var(--main-text_color_blue); */
     color: black;
     font-weight: var(--main-text-strength);
@@ -73,7 +75,7 @@
     letter-spacing: var(--main-text-space);
     font-size: var(--main-text-size_large);
     top: 60px;
-    /* left: 16px; */
+    left: 20px;
 }
 
 .dropdown_overlay {
@@ -171,13 +173,13 @@
     display: block;
 }
 .right p{
-    padding-left: 40px;
-    padding-top: 40px;
+    /* padding-left: 40px; */
+    /* padding-top: 40px; */
     color:  #0077ff;
     font-size: 150%;
 }
 .right h4{
-    padding-left: 40px;
+    /* padding-left: 40px; */
     padding-top: 5px;
     color:  #0077ff;
     font-size: 250%
@@ -223,12 +225,12 @@
 }
 
 .nav li a{
-    color: #1d77dd;
+    color: black;
+    font-size: 16px;
     text-decoration: none;
 }
 .nav li a:hover{
-    font-weight: bold;
-    color: orange;
+    font-weight: bolder;
 }
 .nav li{
     list-style: none;
